@@ -1,0 +1,14 @@
+BEGIN options
+  DIGITS  10
+  PRINT_INPUT
+END options
+
+BEGIN continuous  FILEOUT  drawdown.csv
+  arrobs_drawdown_k:0_i:9_j:16     drawdown  1 10 17
+  arrobs_drawdown_k:0_i:11_j:13    drawdown  1 12 14
+  arrobs_drawdown_k:0_i:20_j:14    drawdown  1 21 15
+  arrobs_drawdown_k:0_i:26_j:10    drawdown  1 27 11
+  arrobs_drawdown_k:0_i:29_j:6     drawdown  1 30  7
+  arrobs_drawdown_k:0_i:12_j:12    drawdown  1 13 13
+END continuous  FILEOUT  drawdown.csv
+
